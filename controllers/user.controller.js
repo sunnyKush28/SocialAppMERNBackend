@@ -115,7 +115,7 @@ const userLogIn = async (req, res) => {
             secure: true,
             maxAge: 60 * 60 * 1000,
             sameSite: 'None',
-            domain: 'https://jovial-croquembouche-bd0326.netlify.app'
+            domain: '.jovial-croquembouche-bd0326.netlify.app'
 
         };
 
