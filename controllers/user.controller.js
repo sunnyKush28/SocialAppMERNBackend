@@ -109,6 +109,7 @@ const userLogIn = async (req, res) => {
         const { accessToken, refreshToken } = tokens;
 
         const logInUser = await User.findById(user._id).select("-password -refreshToken");
+        console.log("cookies");
 
         const options = {
             httpOnly: true,
