@@ -8,7 +8,7 @@ const app = express()
 // origin: process.env.CORS_ORIGIN,
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://postpulse-app.netlify.app',
     credentials: true,
 }))
 app.use(express.json({ limit: "16kb" }));
