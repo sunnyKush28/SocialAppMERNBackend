@@ -112,7 +112,7 @@ const userLogIn = async (req, res) => {
 
         const options = {
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
+            secure: true,
             magAge: 60 * 60 * 1000,
             sameSite: 'None',
             domain: 'https://jovial-croquembouche-bd0326.netlify.app'
