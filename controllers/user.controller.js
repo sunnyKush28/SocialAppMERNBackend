@@ -143,7 +143,7 @@ const userLogout = async (req, res) => {
         httpOnly: true,
         secure: true,
         maxAge: 60 * 60 * 1000,
-        sameSite: 'None',
+
 
     };
 
