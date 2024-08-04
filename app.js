@@ -5,9 +5,10 @@ import userRouter from './routes/user.routers.js'
 import postRouter from './routes/post.routers.js'
 
 const app = express()
+// origin: process.env.CORS_ORIGIN,
 
 app.use(cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: 'https://jovial-croquembouche-bd0326.netlify.app',
     credentials: true,
 }))
 app.use(express.json({ limit: "16kb" }));
