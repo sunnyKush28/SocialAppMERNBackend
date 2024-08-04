@@ -116,7 +116,8 @@ const userLogIn = async (req, res) => {
             secure: true,
             maxAge: 60 * 60 * 1000,
             sameSite: 'None',
-            domain: 'jovial-croquembouche-bd0326.netlify.app'
+            domain: 'jovial-croquembouche-bd0326.netlify.app',
+            path: '/',
         };
 
         return res.status(200)
@@ -144,6 +145,7 @@ const userLogout = async (req, res) => {
         secure: true,
         maxAge: 60 * 60 * 1000,
         sameSite: 'None',
+        path: '/',
         domain: 'jovial-croquembouche-bd0326.netlify.app'
     };
 
@@ -176,6 +178,7 @@ const refreshAcessToken = async (req, res) => {
             secure: true,
             maxAge: 60 * 60 * 1000,
             sameSite: 'None',
+            path: '/',
             domain: 'jovial-croquembouche-bd0326.netlify.app'
         }
 
