@@ -8,7 +8,7 @@ const app = express()
 // origin: process.env.CORS_ORIGIN,
 
 app.use(cors({
-    origin: 'https://jovial-croquembouche-bd0326.netlify.app',
+    origin: 'https://boisterous-hamster-ef9fe3.netlify.app',
     credentials: true,
 }))
 app.use(express.json({ limit: "16kb" }));
