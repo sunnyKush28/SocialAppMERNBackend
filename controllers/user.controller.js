@@ -176,7 +176,7 @@ const refreshAcessToken = async (req, res) => {
             httpOnly: true,
             secure: true,
             maxAge: 60 * 60 * 1000, // 1 hour
-            sameSite: 'None', // Required for third-party cookies
+            sameSite: 'Strict', // Required for third-party cookies
             path: '/api/v1/user/refreshtoken' // Make sure the path is set correctly
 
 
