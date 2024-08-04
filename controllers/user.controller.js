@@ -175,9 +175,6 @@ const refreshAcessToken = async (req, res) => {
             secure: true,
             maxAge: 60 * 60 * 1000, // 1 hour
             sameSite: 'None', // Required for third-party cookies
-
-
-
         }
 
         const tokens = await generateAccessTokenAndRefreshTokens(user._id);
