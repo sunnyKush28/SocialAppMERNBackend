@@ -113,6 +113,9 @@ const userLogIn = async (req, res) => {
         const options = {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production',
+            magAge: 60 * 60 * 1000,
+            sameSite: 'None',
+            domain: 'https://jovial-croquembouche-bd0326.netlify.app'
 
         };
 
@@ -139,6 +142,9 @@ const userLogout = async (req, res) => {
     const options = {
         httpOnly: true,
         secure: true,
+        magAge: 60 * 60 * 1000,
+        sameSite: 'None',
+        domain: 'https://jovial-croquembouche-bd0326.netlify.app'
     };
 
     return res.status(200)
@@ -167,7 +173,10 @@ const refreshAcessToken = async (req, res) => {
 
         const options = {
             httpOnly: true,
-            secure: true
+            secure: true,
+            magAge: 60 * 60 * 1000,
+            sameSite: 'None',
+            domain: 'https://jovial-croquembouche-bd0326.netlify.app'
         }
 
         const tokens = await generateAccessTokenAndRefreshTokens(user._id);
