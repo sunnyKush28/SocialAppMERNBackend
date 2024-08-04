@@ -143,7 +143,7 @@ const userLogout = async (req, res) => {
         secure: true,
         maxAge: 60 * 60 * 1000, // 1 hour
         sameSite: 'None', // Required for third-party cookies
-        path: '/api/v1/user/refreshtoken' // Make sure the path is set correctly
+
     };
 
     return res.status(200)
