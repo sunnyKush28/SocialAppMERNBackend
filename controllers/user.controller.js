@@ -143,7 +143,7 @@ const userLogout = async (req, res) => {
     const options = {
         httpOnly: true,
         secure: true,
-        magAge: 60 * 60 * 1000,
+        maxAge: 60 * 60 * 1000,
         sameSite: 'None',
 
     };
@@ -175,7 +175,7 @@ const refreshAcessToken = async (req, res) => {
         const options = {
             httpOnly: true,
             secure: true,
-            magAge: 60 * 60 * 1000,
+            maxAge: 60 * 60 * 1000,
             sameSite: 'None',
 
         }
